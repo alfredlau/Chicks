@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html ng-app>
-<script type="text/javascript"></script>
+<html ng-app='DIapp'>
+
 <head>
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="angular.js"></script>
+<script src="app.js"></script>
 	<title>Hello Chicks</title>
 </head>
 <body>
-<h1>Hello Chicks!</h1>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+	<div>
+		
+			<div class="logo">
+				<h1>Chicks</h1>
+			</div>
+		</a>
+	</div>
+				<a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
+				<a href="#"><i class="fa fa-fw fa-envelope">Contact</i></a>
+				<a href="#"><i class="fa fa-fw fa-user"></i>Login</a>
+	
+		</nav>
+	</header>
+<h1>Chicks</h1>
 <p>What sup baby</p>
-<p>wtf</p>
-<p>wtf</p>
-<p>wtf</p>
+<div ng-controller='DIcontroller'>
+	<input type="text" ng-model="name"
+	ng-blur="upper();">
+</div>
+</div>
+
 </body>
 </html>
