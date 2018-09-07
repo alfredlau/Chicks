@@ -90,8 +90,49 @@ body {
 .search{
 	align-items: center;
 	width: 100%;
-	padding-left: 5%;
+
 	padding-right: 5%;
 	justify-content: space-around;
 	display: flex;
+}
+
+.logindesktop{
+	width: 590px;
+	position: relative;
+	height: 822px;
+	margin-top: 30px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	border-radius: 8px;
+}
+
+
+
+.welcomemsg{
+	width: 400px;
+	height: 600px;
+}
+
+.welcometext{
+	margin-bottom: 0;
+	line-height: 57px;
+	font-size: 3rem;
+	margin: 0;
+}
+
+.signupbutton{
+	width: 200px;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.27);
+	margin-top: 50px;
+	line-height: 55px;
+	height: 55px;
+	letter-spacing: .02em;
+	cursor: pointer;
+	background: linear-gradient(262deg, #ff7854, #fd267d);
+	color: #fff;
+	border-radius: 100px;
+	max-width: 315px;
+
 }
