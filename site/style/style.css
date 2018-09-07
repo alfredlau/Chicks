@@ -1,25 +1,44 @@
 body {
 	font-size: 16px;
-	color: #fff;
-	background-color: #61122f;
+	color: #424242;
 	font-family: 'oxygen', san-serifs;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
 }
+
 
 
 .navbar{
 	width: 100%;
 	background-color: #555;
-	overflow: auto;
 	border-radius: 0;
 	border: 0;
+	height: 96px;
+	position: relative;
+	align-items: center;
+	display: flex;
+	vertical-align: middle;
+}
+
+.nav-container{
+	width: 80%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	color: white;
+	justify-content: space-between;
 }
 
 .logo{
-	float: left;
+	margin-left: 5%;
+	margin-right: 30px;
 }
 
 .navbar a {
-	float: right;
+	align-items: center;
 	text-align: center;
 	padding: 12px;
 	color: white;
@@ -28,5 +47,51 @@ body {
 }
 
 .navbar a:hover{
-	background-color: #000;
+	color : #61122f;
+}
+
+.overhead{
+	width: 36%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.overheadmenu {
+	display: flex;
+	align-items: center;
+	max-width: 33%;
+	padding-left: 12px;
+	padding-right: 12px;
+	line-height: 1em;
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+	cursor: pointer;
+}
+
+.login{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.loginlogo{
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 40px;
+}
+
+.netheight{
+	height: calc(100%-96px);
+	scroll-behavior: smooth;
+}
+
+.search{
+	align-items: center;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	justify-content: space-around;
+	display: flex;
 }
